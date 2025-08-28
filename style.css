@@ -273,7 +273,7 @@ nav .divider {
 
 @media (max-width: 775px) {
   #skills h2 {
-    margin: 2rem;
+    margin: 2.2rem;
   }
 }
 .card {
@@ -377,7 +377,11 @@ nav .divider {
   /* margin-bottom: 40px; */
   color: #d9d9d9;
 }
-
+@media (max-width: 620px) {
+  #Tools h2 {
+    font-size: 2.2rem;
+  }
+}
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -515,12 +519,18 @@ footer {
   padding: 2rem 1rem 1rem;
 }
 
-.heding12 h1 {
+.heding12 h2 {
   font-family: "Kalam", cursive;
   font-size: 2.6rem;
   text-transform: uppercase;
   margin: 0.5rem 0 2rem;
   color: #d9d9d9;
+}
+
+@media (max-width: 620px) {
+  .heding12 h2 {
+    font-size: 2.2rem;
+  }
 }
 
 .footer-svg {
