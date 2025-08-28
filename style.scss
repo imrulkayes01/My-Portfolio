@@ -51,6 +51,7 @@ nav a {
     right: 0;
     left: 0;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     position: relative;
   }
@@ -59,14 +60,10 @@ nav a {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    background: #2e7d32;
-    color: white;
-    border-radius: 50%;
+  }
+  .logo img {
     width: 44px;
-    height: 44px;
-    font-size: 18px;
-    z-index: 1001;
-    user-select: none;
+    border-radius: 50%;
   }
 
   .menu-toggle {
@@ -75,6 +72,8 @@ nav a {
     color: white;
     cursor: pointer;
     z-index: 1001;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     user-select: none;
   }
 
@@ -90,6 +89,7 @@ nav a {
     flex-direction: column;
     gap: 12px;
     border: 2px solid rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     // width: 95vw;
     // max-width: 350px;
@@ -131,9 +131,15 @@ nav .divider {
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  padding: 120px 20px 50px;
+  padding: 120px 20px 0px;
   color: #fff;
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 620px) {
+  #about {
+    padding: 60px 20px 50px;
+  }
 }
 
 #about div {
@@ -262,6 +268,16 @@ nav .divider {
   transform: scale(1.05);
 }
 
+#skills {
+  padding: 0rem 1rem;
+  padding-top: 3rem;
+}
+@media (max-width: 620px) {
+  #skills {
+    padding: 0;
+  }
+}
+
 // SKILLS SECTION
 #skills h2 {
   font-family: "Kalam", cursive;
@@ -328,8 +344,6 @@ nav .divider {
 
 .whatsapp-btn {
   text-align: center;
-  padding-bottom: 50px;
-  margin-top: 40px;
 }
 
 .whatsapp-btn button {
@@ -360,7 +374,8 @@ nav .divider {
 // TOOLS SECTION
 
 #Tools {
-  padding: 10px 20px;
+  padding: 0px 20px;
+  padding-top: 3rem;
   background-color: #111;
   color: #ffffff;
   text-align: center;
@@ -370,11 +385,11 @@ nav .divider {
   text-align: center;
   color: #fff;
   font-size: 3rem;
-  padding-bottom: 2.5rem;
+  // padding-bottom: 2.5rem;
 }
 #Tools h2 {
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   color: #d9d9d9;
 }
 
@@ -382,7 +397,7 @@ nav .divider {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
   // max-width: 90%;
   margin: 0 auto;
 }
@@ -424,6 +439,7 @@ nav .divider {
 // PROJECTS CARD
 #project-card {
   padding: 0px 20px;
+  padding-top: 3rem;
   background-color: #111;
   text-align: center;
 }
@@ -445,8 +461,14 @@ nav .divider {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
-  padding-top: 3.5rem;
-  padding-bottom: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+@media (max-width: 768px) {
+  .prj-card {
+    padding-top: 0;
+  }
 }
 
 .p-card {
