@@ -5,15 +5,21 @@ body {
 }
 
 header {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
   position: fixed;
   top: 20px;
   left: 0;
-  width: 100%;
+  right: 0;
   display: flex;
   justify-content: center;
   z-index: 1000;
 }
-
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 nav {
   display: flex;
   align-items: center;
@@ -512,7 +518,6 @@ nav .divider {
   background-color: #eb379d;
 }
 
-/*  */
 #contact-page {
   background-color: #111111;
   color: #ffffff;
@@ -534,7 +539,7 @@ nav .divider {
   }
 }
 #contact-page form {
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
   background: #1a1a1a;
   padding: 20px;
@@ -588,8 +593,10 @@ nav .divider {
 #contact-page button:hover {
   background: #eb379d;
 }
-/*  */
+
 #social-contact {
+  max-width: 1280px;
+  margin: 0 auto;
   padding-top: 4rem;
 }
 
